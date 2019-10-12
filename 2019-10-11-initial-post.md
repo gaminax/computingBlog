@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: The Initial Post
 date: 2019-10-11
 ---
