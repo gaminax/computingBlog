@@ -1,1 +1,1 @@
-# computingBlog
+# Computing Blog
