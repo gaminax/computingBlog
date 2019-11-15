@@ -1,5 +1,8 @@
-email: gaminax@gmail.com
 description: gaminax computing blog
-baseurl: "computingBlog"
+baseurl: "/computingBlog"
 github_username: gaminax
 author: gaminax
+theme: minima
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

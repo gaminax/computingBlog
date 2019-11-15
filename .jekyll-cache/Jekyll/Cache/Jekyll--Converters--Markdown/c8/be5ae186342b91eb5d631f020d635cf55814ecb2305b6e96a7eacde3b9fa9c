@@ -1,0 +1,21 @@
+I"Ê<p><a href="/index.html">Home/</a>
+<a href="/computingBlog/index.html">ComputingBlog/</a>
+2019-10-11 Initial Post</p>
+
+<p>The issue is figuring out how to organize this website.</p>
+
+<h2 id="project-organization">Project Organization</h2>
+<p>The computingBlog project is layered on top of the root Github Pages project, gaminax.github.io.</p>
+
+<h2 id="generating-asciidoc-content">Generating AsciiDoc Content</h2>
+<p>The Github Jekyll website generator is limited to Github Flavored Markdown.
+One can use another markdown format, but one then has to generate the HTML by some other means.</p>
+
+<p>The AsciiDoctor/Jekyll-AsciiDoc-Quick-Start project shows how to generate asciidoc content via another website, https://travis-ci.org/, and have that website post the html to Github.</p>
+
+<p>If one generates the html oneself, it can be done a file at a time. or a project at a time.
+Generating the html a file at a time has some advantages: one can use multiple source formats, and simply add the generated html file to the source. Large web pages with multiple subheadings are quite usable.</p>
+
+<h2 id="fonts">Fonts</h2>
+<p>The necessary fonts need to be requested in the stylesheets via Google Fonts, or stored on github.</p>
+:ET

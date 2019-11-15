@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: post
 title: The Initial Post
 date: 2019-10-11
 ---
 
-
-[Home/](../index.html)
-[ComputingBlog/](index.html)
+[Home/](/index.html)
+[ComputingBlog/]( {{ site.baseurl }}/index.html)
 2019-10-11 Initial Post
 
 The issue is figuring out how to organize this website.

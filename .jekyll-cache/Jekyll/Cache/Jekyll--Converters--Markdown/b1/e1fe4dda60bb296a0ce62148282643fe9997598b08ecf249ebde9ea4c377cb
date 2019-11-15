@@ -1,0 +1,18 @@
+I"X<h2 id="gaminax-computing-blog">Gaminax Computing Blog</h2>
+
+<p>site.baseurl = /computingBlog</p>
+
+<h2 id="posts">Posts</h2>
+
+<ul>
+  
+    <li>
+      <a href="/computingBlog/2019/10/12/second-post.html">The Second Post</a>
+    </li>
+  
+    <li>
+      <a href="/computingBlog/2019/10/11/initial-post.html">The Initial Post</a>
+    </li>
+  
+</ul>
+:ET
