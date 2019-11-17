@@ -15,9 +15,10 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-11T00:00:00-04:00" />
 <script type="application/ld+json">
-{"headline":"The Initial Post","dateModified":"2019-10-11T00:00:00-04:00","datePublished":"2019-10-11T00:00:00-04:00","author":{"@type":"Person","name":"gaminax"},"description":"Home/ ComputingBlog/ 2019-10-11 Initial Post","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html"},"@type":"BlogPosting","url":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"gaminax"},"description":"Home/ ComputingBlog/ 2019-10-11 Initial Post","@type":"BlogPosting","headline":"The Initial Post","dateModified":"2019-10-11T00:00:00-04:00","url":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html","datePublished":"2019-10-11T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/computingBlog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/computingBlog/feed.xml" /></head>
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/computingBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/computingBlog/feed.xml" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/computingBlog/"></a><nav class="site-nav">
@@ -65,6 +66,17 @@ Generating the html a file at a time has some advantages: one can use multiple s
 
 <h2 id="fonts">Fonts</h2>
 <p>The necessary fonts need to be requested in the stylesheets via Google Fonts, or stored on github.</p>
+
+<h2 id="addendum-2019-11-17">Addendum 2019 11 17</h2>
+
+<h3 id="simple-ways-to-organize-website">Simple ways to organize website</h3>
+<ul>
+  <li>Plugins can be loaded from _config.yml, without a version number. There is no need for Ruby Gems. So no need for Gemfile or messing with bundler. The Jekyll website ought to emphasize this more.</li>
+  <li>Deriving a dark theme from minima: One can override the minima CSS coloring by adding CSS coloring to assets/css/style.scss. I initially tried copying and editing all the CSS files, but overriding is simpler. A dark theme derived from minima would be good; one would not need to add to style.scss.</li>
+  <li>Build /texts and /computing offline to docs when using asciidoc plugin.</li>
+  <li>Use IBM Plex fonts from fonts.google.com. These are a good and unified font set.</li>
+</ul>
+
 
   </div><a class="u-url" href="/computingBlog/2019/10/11/initial-post.html" hidden></a>
 </article>

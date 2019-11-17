@@ -25,3 +25,12 @@ Generating the html a file at a time has some advantages: one can use multiple s
 
 ## Fonts
 The necessary fonts need to be requested in the stylesheets via Google Fonts, or stored on github.
+
+## Addendum 2019 11 17
+
+### Simple ways to organize website
+-  Plugins can be loaded from \_config.yml, without a version number. There is no need for Ruby Gems. So no need for Gemfile or messing with bundler. The Jekyll website ought to emphasize this more.
+- Deriving a dark theme from minima: One can override the minima CSS coloring by adding CSS coloring to assets/css/style.scss. I initially tried copying and editing all the CSS files, but overriding is simpler. A dark theme derived from minima would be good; one would not need to add to style.scss.
+- Build /texts and /computing offline to docs when using asciidoc plugin.
+- Use IBM Plex fonts from fonts.google.com. These are a good and unified font set.
+
