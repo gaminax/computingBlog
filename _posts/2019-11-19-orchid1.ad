@@ -1,0 +1,35 @@
+---
+layout: post
+date: 2019-11-19
+title: Orchid1
+draft: true
+---
+:page-liquid:
+
+
+page.title = {{ page.title }}
+
+link:/index.html[home/]
+link:{{ site.baseurl }}/index.html[computingBlog/]
+
+
+== Orchid1
+Produced with Inkscape.
+
+++++
+include::/assets/images/orchid-plain-1.svg[]
+++++
+
+
+The orchid is work in progress.
+
+
+== Orchid3
+Image problems, was fixed by changing compression.
+
+Image is 794 x 1123.
+Produced with Gimp.
+
+image::/computingBlog/assets/images/orchid-3.png[Orchid3]
+
+

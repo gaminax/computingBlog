@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Fonts</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Fonts" />
+<meta name="author" content="gaminax" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="page.title = Fonts" />
+<meta property="og:description" content="page.title = Fonts" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-19T00:00:00-05:00" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"gaminax"},"description":"page.title = Fonts","headline":"Fonts","dateModified":"2019-11-19T00:00:00-05:00","datePublished":"2019-11-19T00:00:00-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/computingBlog/2019/11/19/second-post.html"},"url":"/computingBlog/2019/11/19/second-post.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/computingBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/computingBlog/feed.xml" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/computingBlog/"></a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/computingBlog/">Computing Blog</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Fonts</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-11-19T00:00:00-05:00" itemprop="datePublished">Nov 19, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div class="paragraph">
+<p>page.title = Fonts</p>
+</div>
+<div class="paragraph">
+<p><a href="/index.html">home/</a>
+<a href="/computingBlog/index.html">computingBlog/</a></p>
+</div>
+<div class="sect1">
+<h2 id="pace-fonts">PACE Fonts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Pace web site has the works of Josephus, but the Greek fonts do not display.
+It is not clear why this is. The Netscape Browser, Firefox, is set to override the specified fonts, and to display Noto, which has Greek fonts.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>In order to correctly display Greek and Hebrew text,
+please ensure one of the following Unicode fonts is installed:
+Gentium, Palatino*#, Tahoma, Code2000, Cardo,
+ArialMS, Vusillus, Galilee Unicode Gk, TITUS Cyberbit Basic,
+Lucida Grande#, Lucida Sans Unicode*, Galilee, or Arial Unicode MS.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>These are Microsoft fonts.</p>
+</div>
+<div class="paragraph">
+<p>It may be possible to set the font configuration to have one of these fonts be recognized by an equivalent font, such as Liberation Sans. I wonder why they say 'ArialMS'? I would pick up 'Arial'.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$$ fc-match Arial
+LiberationSans-Regular.ttf: "Liberation Sans" "Regular"
+$$ fc-match ArialMS
+NotoSansDisplay-Regular.ttf: "Noto Sans Display" "Regular"</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="available-ttf-fonts">Available ttf fonts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>pacman -Ss 'ttf-*'</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>extra/font-bh-ttf 1.0.3-4
+    X.org Luxi Truetype fonts
+extra/gnu-free-fonts 20120503-6
+    A free family of scalable outline fonts
+extra/noto-fonts 20190111-2 [installed]
+    Google Noto TTF fonts
+extra/noto-fonts-extra 20190111-2
+    Google Noto TTF fonts - additional variants
+extra/sdl2_ttf 2.0.15-1
+    A library that allows you to use TrueType fonts in your SDL applications (Version 2)
+extra/sdl_ttf 2.0.11-5
+    A library that allows you to use TrueType fonts in your SDL applications
+extra/ttf-bitstream-vera 1.10-12 [installed]
+    Bitstream Vera fonts.
+extra/ttf-caladea 20130214-2
+    Google's Caladea font
+extra/ttf-carlito 20130920-4
+    Google's Carlito font
+extra/ttf-croscore 20190111-2
+    Chrome OS core fonts
+extra/ttf-dejavu 2.37-2 [installed]
+    Font family based on the Bitstream Vera Fonts with a wider range of characters
+extra/ttf-hack 3.003-1
+    A hand groomed and optically balanced typeface based on Bitstream Vera Mono.
+extra/ttf-junicode 1.002-1 [installed]
+    Junius-Unicode: Font for medievalists
+extra/ttf-linux-libertine 5.3.0-4
+    Serif (Libertine) and Sans Serif (Biolinum) OpenType fonts with large Unicode coverage
+community/mftrace 1.2.19-1
+    Traces TeX bitmap fonts into PFA, PFB, or TTF
+community/opendesktop-fonts 1.4.2-5
+    Chinese TrueType Fonts
+community/perl-font-ttf 1.06-3
+    Font::TTF - Perl module for TrueType font hacking
+community/ttf-anonymous-pro 1.003-4
+    A family of four fixed-width fonts designed especially with coding in mind
+community/ttf-arphic-ukai 0.2.20080216.1-7
+    CJK Unicode font Kaiti style
+community/ttf-arphic-uming 0.2.20080216.1-7
+    CJK Unicode font Ming style
+community/ttf-baekmuk 2.2-11
+    Korean fonts
+community/ttf-cormorant 3.601-1 [installed]
+    Open-source display font family
+community/ttf-droid 20121017-7 [installed]
+    General-purpose fonts released by Google as part of Android
+community/ttf-fantasque-sans-mono 1.7.2-2
+    TTF font family with a great monospaced variant for programmers
+community/ttf-fira-code 1.207-1
+    Monospaced font with programming ligatures
+community/ttf-fira-mono 2:3.206-3
+    Mozilla's monospace typeface designed for Firefox OS
+community/ttf-fira-sans 1:4.301-1
+    Mozilla's sans-serif typeface designed for Firefox OS
+community/ttf-font-awesome 5.10.1-1
+    Iconic font designed for Bootstrap
+community/ttf-gentium 1.03-5
+    Wide range of Latin-based alphabets, defines roughly 1,500 glyphs.
+community/ttf-hanazono 20170904-3
+    A free Japanese kanji font, which contains about 78,685 characters (and 2 SPACEs) defined in
+    ISO/IEC 10646 standard / the Unicode standard.
+community/ttf-hannom 2005-5
+    Chinese and Vietnamese TrueType fonts
+community/ttf-ibm-plex 2.0.0-2 [installed]
+    IBM Plex Mono, Sans, and Serif
+community/ttf-inconsolata 1:2.0.0.1-3 [installed]
+    Monospace font for pretty code listings and for the terminal
+community/ttf-indic-otf 0.2-9
+    Indic Opentype Fonts collection
+community/ttf-ionicons 4.6.3-1
+    Font from the Ionic mobile framework
+community/ttf-joypixels 5.0.2-2
+    Emoji as a Service (formerly EmojiOne)
+community/ttf-khmer 5.0-6
+    Fonts for Khmer and Latin alphabets
+community/ttf-lato 2.015-3 [installed]
+    A sanserif typeface family bearing the Polish name of "Summer"
+community/ttf-liberation 2.00.5-2 [installed]
+    Red Hats Liberation fonts
+community/ttf-linux-libertine-g 20120116-5
+    Graphite port of Linux Libertine and Linux Biolinum fonts
+community/ttf-opensans 1.101-1 [installed]
+    Sans-serif typeface commissioned by Google
+community/ttf-proggy-clean 1.1.5-1
+    Monospaced fonts for programming
+community/ttf-roboto 2.138-1 [installed]
+    Google's signature family of fonts
+community/ttf-sazanami 20040629-10
+    Japanese fonts
+community/ttf-tibetan-machine 1.901-9
+    Open-type unicode font for Tibetan
+community/ttf-ubuntu-font-family 0.83-5
+    Ubuntu font family</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The ttf-gentium are a match.</p>
+</div>
+</div>
+</div>
+  </div><a class="u-url" href="/computingBlog/2019/11/19/second-post.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/computingBlog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading"></h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">gaminax</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/gaminax"><svg class="svg-icon"><use xlink:href="/computingBlog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">gaminax</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>gaminax computing blog</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

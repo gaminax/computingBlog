@@ -3,22 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>The Initial Post</title>
+<title>Website Organization</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="The Initial Post" />
+<meta property="og:title" content="Website Organization" />
 <meta name="author" content="gaminax" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Home/ ComputingBlog/ 2019-10-11 Initial Post" />
-<meta property="og:description" content="Home/ ComputingBlog/ 2019-10-11 Initial Post" />
-<link rel="canonical" href="http://localhost:4000/computingBlog/2019/10/11/initial-post.html" />
-<meta property="og:url" content="http://localhost:4000/computingBlog/2019/10/11/initial-post.html" />
+<meta name="description" content="site.baseurl = /computingBlog" />
+<meta property="og:description" content="site.baseurl = /computingBlog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-11T00:00:00-04:00" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"gaminax"},"description":"Home/ ComputingBlog/ 2019-10-11 Initial Post","@type":"BlogPosting","headline":"The Initial Post","dateModified":"2019-10-11T00:00:00-04:00","url":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html","datePublished":"2019-10-11T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/computingBlog/2019/10/11/initial-post.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"gaminax"},"description":"site.baseurl = /computingBlog","headline":"Website Organization","dateModified":"2019-10-11T00:00:00-04:00","datePublished":"2019-10-11T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/computingBlog/2019/10/11/initial-post.html"},"url":"/computingBlog/2019/10/11/initial-post.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Sans+Condensed|IBM+Plex+Serif&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/computingBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/computingBlog/feed.xml" /></head>
+<link rel="stylesheet" href="/computingBlog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/computingBlog/feed.xml" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/computingBlog/"></a><nav class="site-nav">
@@ -39,20 +37,26 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">The Initial Post</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Website Organization</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2019-10-11T00:00:00-04:00" itemprop="datePublished">Oct 11, 2019
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p><a href="/index.html">Home/</a>
-<a href="/computingBlog/index.html">ComputingBlog/</a>
+    <p>site.baseurl = /computingBlog</p>
+
+<p>page.title =  Website Organization</p>
+
+<p>page.date = 2019-10-11 00:00:00 -0400</p>
+
+<p><a href="/index.html">home/</a>
+<a href="/computingBlog/index.html">computingBlog/</a>
 2019-10-11 Initial Post</p>
 
 <p>The issue is figuring out how to organize this website.</p>
 
-<h2 id="project-organization">Project Organization</h2>
+<h2 id="github-project-organization">Github Project Organization</h2>
 <p>The computingBlog project is layered on top of the root Github Pages project, gaminax.github.io.</p>
 
 <h2 id="generating-asciidoc-content">Generating AsciiDoc Content</h2>
@@ -72,11 +76,12 @@ Generating the html a file at a time has some advantages: one can use multiple s
 <h3 id="simple-ways-to-organize-website">Simple ways to organize website</h3>
 <ul>
   <li>Plugins can be loaded from _config.yml, without a version number. There is no need for Ruby Gems. So no need for Gemfile or messing with bundler. The Jekyll website ought to emphasize this more.</li>
-  <li>Deriving a dark theme from minima: One can override the minima CSS coloring by adding CSS coloring to assets/css/style.scss. I initially tried copying and editing all the CSS files, but overriding is simpler. A dark theme derived from minima would be good; one would not need to add to style.scss.</li>
   <li>Build /texts and /computing offline to docs when using asciidoc plugin.</li>
   <li>Use IBM Plex fonts from fonts.google.com. These are a good and unified font set.</li>
+  <li>Deriving a dark theme from minima: One can override the minima CSS coloring by adding CSS coloring to assets/css/style.scss. I initially tried copying and editing all the CSS files, but overriding is simpler. A dark theme derived from minima would be good; one would not need to add to style.scss.</li>
+  <li>The best dark background seems to be dark green, #030, or #040. This has enough color in it to be distinguishable from black, #000.</li>
+  <li>minima syntax highlighting: The foreground text colors of the minima theme, other than the main text color, do not seem to need to be overriden. We only need to change the background colors.</li>
 </ul>
-
 
   </div><a class="u-url" href="/computingBlog/2019/10/11/initial-post.html" hidden></a>
 </article>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/computingBlog/feed.xml" rel="self" type="application/atom+xml" /><link href="/computingBlog/" rel="alternate" type="text/html" /><updated>2019-11-19T20:44:49-05:00</updated><id>/computingBlog/feed.xml</id><subtitle>gaminax computing blog</subtitle><author><name>gaminax</name></author><entry><title type="html">Website Organization</title><link href="/computingBlog/2019/10/11/initial-post.html" rel="alternate" type="text/html" title="Website Organization" /><published>2019-10-11T00:00:00-04:00</published><updated>2019-10-11T00:00:00-04:00</updated><id>/computingBlog/2019/10/11/initial-post</id><content type="html" xml:base="/computingBlog/2019/10/11/initial-post.html">&lt;p&gt;site.baseurl = /computingBlog&lt;/p&gt;
+
+&lt;p&gt;page.title =  Website Organization&lt;/p&gt;
+
+&lt;p&gt;page.date = 2019-10-11 00:00:00 -0400&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/index.html&quot;&gt;home/&lt;/a&gt;
+&lt;a href=&quot;/computingBlog/index.html&quot;&gt;computingBlog/&lt;/a&gt;
+2019-10-11 Initial Post&lt;/p&gt;
+
+&lt;p&gt;The issue is figuring out how to organize this website.&lt;/p&gt;
+
+&lt;h2 id=&quot;github-project-organization&quot;&gt;Github Project Organization&lt;/h2&gt;
+&lt;p&gt;The computingBlog project is layered on top of the root Github Pages project, gaminax.github.io.&lt;/p&gt;
+
+&lt;h2 id=&quot;generating-asciidoc-content&quot;&gt;Generating AsciiDoc Content&lt;/h2&gt;
+&lt;p&gt;The Github Jekyll website generator is limited to Github Flavored Markdown.
+One can use another markdown format, but one then has to generate the HTML by some other means.&lt;/p&gt;
+
+&lt;p&gt;The AsciiDoctor/Jekyll-AsciiDoc-Quick-Start project shows how to generate asciidoc content via another website, https://travis-ci.org/, and have that website post the html to Github.&lt;/p&gt;
+
+&lt;p&gt;If one generates the html oneself, it can be done a file at a time. or a project at a time.
+Generating the html a file at a time has some advantages: one can use multiple source formats, and simply add the generated html file to the source. Large web pages with multiple subheadings are quite usable.&lt;/p&gt;
+
+&lt;h2 id=&quot;fonts&quot;&gt;Fonts&lt;/h2&gt;
+&lt;p&gt;The necessary fonts need to be requested in the stylesheets via Google Fonts, or stored on github.&lt;/p&gt;
+
+&lt;h2 id=&quot;addendum-2019-11-17&quot;&gt;Addendum 2019 11 17&lt;/h2&gt;
+
+&lt;h3 id=&quot;simple-ways-to-organize-website&quot;&gt;Simple ways to organize website&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Plugins can be loaded from _config.yml, without a version number. There is no need for Ruby Gems. So no need for Gemfile or messing with bundler. The Jekyll website ought to emphasize this more.&lt;/li&gt;
+  &lt;li&gt;Build /texts and /computing offline to docs when using asciidoc plugin.&lt;/li&gt;
+  &lt;li&gt;Use IBM Plex fonts from fonts.google.com. These are a good and unified font set.&lt;/li&gt;
+  &lt;li&gt;Deriving a dark theme from minima: One can override the minima CSS coloring by adding CSS coloring to assets/css/style.scss. I initially tried copying and editing all the CSS files, but overriding is simpler. A dark theme derived from minima would be good; one would not need to add to style.scss.&lt;/li&gt;
+  &lt;li&gt;The best dark background seems to be dark green, #030, or #040. This has enough color in it to be distinguishable from black, #000.&lt;/li&gt;
+  &lt;li&gt;minima syntax highlighting: The foreground text colors of the minima theme, other than the main text color, do not seem to need to be overriden. We only need to change the background colors.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>gaminax</name></author><summary type="html">site.baseurl = /computingBlog</summary></entry></feed>
